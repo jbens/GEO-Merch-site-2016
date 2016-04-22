@@ -22,6 +22,7 @@
 				top: 10%;
 				-webkit-transform: translate(-50%, -50%); 
 				text-align: center;
+				z-index: 1;
 				
 			}
 					
@@ -33,7 +34,35 @@
 				-webkit-transform: translate(-50%, -25%);
 				margin: 24% 0;
 			}	
-					
+				
+			.row1 {
+				position: absolute;
+				text-align: center;
+				width: 75%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -25%);
+				margin: 15% 0;
+			}	
+				
+			.row2 {
+				position: absolute;
+				text-align: center;
+				width: 75%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -25%);
+				margin: 35% 0;
+			}		
+			
+			.row3 {
+				position: absolute;
+				text-align: center;
+				width: 75%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -25%);
+				margin: 55% 0;
+				padding-bottom: 4cm;
+			}		
+				
 			.product {
 				vertical-align: top;
 				display: inline-block;
@@ -57,8 +86,16 @@
 				color: #fbfbfb;
 			}
 			
+			a span {
+				opacity: 0;
+			}
+		
 			a:hover {
-				text-decoration: underline;
+/* 				text-decoration: underline; */
+			}
+			
+			a:hover span {
+				opacity: 100;
 			}
 				
 		</style>
@@ -74,7 +111,7 @@
 			<img src="GEO2016_web_offwhite.png" width="10%"></img>
 		</div>
 
- 		<div class="centered-product">
+ 		<div class="row1">
 			<div class="product">
 				<a href="#">
 				<img src="stl1.png" width="75%"></img>		
@@ -84,8 +121,54 @@
 			
 			<div class="product">
 				<a href="#">
+				<img src="stl1.png" width="75%"></img>		
+				<span class="caption">Product 1</span>
+				</a>
+			</div>
+		
+			<div class="product">
+				<a href="#">
+				<img src="stl1.png" width="75%"></img>		
+				<span class="caption">Product 1</span>
+				</a>
+			</div>
+  		</div>
+  		
+  		<div class="row2">
+			<div class="product">
+				<a href="#">
 				<img src="stl2.png" width="75%"></img>		
 				<span class="caption">Product 2</span>
+				</a>
+			</div>
+			
+			<div class="product">
+				<a href="#">
+				<img src="stl2.png" width="75%"></img>		
+				<span class="caption">Product 2</span>
+				</a>
+			</div>
+		
+			<div class="product">
+				<a href="#">
+				<img src="stl2.png" width="75%"></img>		
+				<span class="caption">Product 2</span>
+				</a>
+			</div>
+  		</div>
+		
+		<div class="row3">
+			<div class="product">
+				<a href="#">
+				<img src="stl2.png" width="75%"></img>		
+				<span class="caption">Product 3</span>
+				</a>
+			</div>
+			
+			<div class="product">
+				<a href="#">
+				<img src="stl3.png" width="75%"></img>		
+				<span class="caption">Product 3</span>
 				</a>
 			</div>
 		
