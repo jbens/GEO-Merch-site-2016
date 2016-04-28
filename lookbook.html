@@ -33,6 +33,16 @@
 				z-index: -1;
 			}	
 			
+			.centered-logo {
+				position: fixed;
+				left: 50%;
+				top: 5%;
+				-webkit-transform: translate(-50%, -50%); 
+				text-align: center;
+				z-index: 1;
+				
+			}
+			
 			.centered-footer {
 				position: fixed;
 				left: 50%;
@@ -55,7 +65,11 @@
 	
 	<!-- BODY -->
 	<body>	
-	<div id="gradient-horizontal"></div>
+		<div id="gradient-horizontal"></div>
+
+		<div class="centered-logo">
+			<img src="GEO2016_web_offwhite.png" width="7%"></img>
+		</div>
 
 		<div class="prevArrow">
 			<a href="#"><img src="arrow_prev2.svg" id="toRightFromLeft" transform='rotate(90)'></img></a>
@@ -69,7 +83,7 @@
 	    <!-- PAGES - 1 LOOK EACH PAGE	-->	
 		<div id="pt-main" class="pt-perspective">	
 
-			<div class="pt-page"><img src="GEO2016_web.png" style="height: 4.4%"></div>
+			<div class="pt-page"><img src="GEO2016_web_offwhite.png" style="height: 4.4%"></div>
 			<div class="pt-page"><img src="v1tee.png" style="height:50%"></div>
 			<div class="pt-page"><img src="v1hat.png" style="height:35%"></div>
 			<div class="pt-page"><img src="v1socks.png" style="height:35%"></div>
