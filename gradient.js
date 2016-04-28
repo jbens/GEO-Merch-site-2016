@@ -48,6 +48,10 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
    background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
     background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
   
+   $('#gradient-horizontal').css({
+   background: "-webkit-gradient(linear, left top, left bottom, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient("+color1+" 0%, "+color2+" 100%)"});
+  
   step += gradientSpeed;
   if ( step >= 1 )
   {
