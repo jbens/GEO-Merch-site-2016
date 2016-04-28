@@ -92,6 +92,28 @@ var PageTransitions = (function() {
 		});
 
 	}
+	
+	// arrow key left and right
+	window.onkeydown = function (e) {
+		var code = e.keyCode ? e.keyCode : e.which;
+		if (code === 37) { //left
+			if(isAnimating) {
+					return false;
+				}
+				if (current < 0) {
+					current = pagesCount - 1;		
+				}
+				prevPage(2); // to Right from Left transition
+		} else if (code === 39) { //right
+			if(isAnimating) {
+					return false;
+				}
+				if (current > pagesCount - 1) {
+					current = 0
+				}
+				nextPage(1); // to Left from Right transition
+		}
+	};
 
 	function nextPage(options ) {
 		var animation = (options.animation) ? options.animation : options;
